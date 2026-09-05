@@ -100,7 +100,7 @@ figcaption {
   margin-top: 7px;
   color: var(--muted);
   font-family: var(--sans);
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
 }
 
@@ -167,7 +167,7 @@ figcaption {
   border-top: 1px solid var(--rule);
   color: var(--muted);
   font-family: var(--sans);
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
 }
 .site-footer p { margin: 0; }
