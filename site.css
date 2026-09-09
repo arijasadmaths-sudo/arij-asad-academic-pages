@@ -47,11 +47,35 @@ img { display: block; max-width: 100%; height: auto; }
 }
 
 .site-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
   color: var(--text);
   font-size: 36px;
   line-height: 1.1;
   text-decoration: none;
 }
+
+.site-name .brand-logo {
+  width: 80px;
+  height: 70px;
+  flex: 0 0 80px;
+}
+
+.site-name:focus-visible,
+.footer-logo:focus-visible {
+  outline: 3px solid var(--link);
+  outline-offset: 5px;
+}
+
+.footer-logo {
+  display: block;
+  width: 160px;
+  max-width: 100%;
+  flex: 0 0 160px;
+}
+
+.footer-logo img { width: 100%; height: auto; }
 
 .site-header nav {
   display: flex;
@@ -161,6 +185,7 @@ figcaption {
 
 .site-footer {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   gap: 25px;
   padding: 22px 0 45px;
@@ -188,6 +213,7 @@ figcaption {
   .site-width { width: min(100% - 30px, 900px); }
   .site-header { padding-top: 28px; }
   .site-name { font-size: 31px; }
+  .site-name .brand-logo { width: 64px; height: 56px; flex-basis: 64px; }
   main { padding-top: 35px; }
   h1 { font-size: 34px; }
   h2 { font-size: 24px; }
@@ -196,5 +222,6 @@ figcaption {
   .detail-list dt { float: none; width: auto; margin-bottom: 1px; }
   .detail-list dd { margin-left: 0; margin-bottom: 12px; }
   .site-footer { display: block; }
+  .site-footer .footer-logo { margin-bottom: 18px; }
   .site-footer p + p { margin-top: 7px; }
 }
